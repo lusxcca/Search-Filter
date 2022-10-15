@@ -7,12 +7,12 @@ const search = () => {
     for (var i = 0; i < pname.length; i++) {
         let match = product[i].getElementsByTagName('h2')[0];
 
-        if(match){
+        if (match) {
             let textvalue = match.textContent || match.innerHTML
 
-            if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+            if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
                 product[i].style.display = "";
-            }else{
+            } else {
                 product[i].style.display = "none";
             }
         }
